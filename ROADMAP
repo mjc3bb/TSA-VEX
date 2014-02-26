@@ -1,7 +1,7 @@
 This will act as a road map for both regular control as well as autonomous mode. 
 
 User control - 
-
+I'd like to add some automation for actions, such  as picking up a ball, dropping it, returning to a base setup, etc. 
 
 
 Autonomous - 
