@@ -1,0 +1,8 @@
+This will act as a road map for both regular control as well as autonomous mode. 
+
+User control - 
+
+
+
+Autonomous - 
+Ideally for autonomous we want to have it set up for user control. This includes moving the lift to an appropriate height, rotating the picker to hold the preloaded bucky ball, and shaking forward the picker.
