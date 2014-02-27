@@ -1,8 +1,14 @@
 This will act as a road map for both regular control as well as autonomous mode. 
 
 User control - 
-I'd like to add some automation for actions, such  as picking up a ball, dropping it, returning to a base setup, etc. 
+-- Add automated functions
+  --Pickup
+  --Scoring
+  --Return to base configuration
 
 
 Autonomous - 
-Ideally for autonomous we want to have it set up for user control. This includes moving the lift to an appropriate height, rotating the picker to hold the preloaded bucky ball, and shaking forward the picker.
+--Set up for user control
+  --Move lift to operating height
+  --Rotate picker to hold preload
+  --Shake robot to move the picker into position
