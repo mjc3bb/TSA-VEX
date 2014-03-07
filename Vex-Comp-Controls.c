@@ -22,23 +22,23 @@
 
 void pre_auton() //Setup for when autonomous is started
 {
-  bStopTasksBetweenModes = true; //When you swap between usercontrol and auton tasks, kill previous task 
-Int jump1 = 1;
-Int jump2 = 1;
+	bStopTasksBetweenModes = true; //When you swap between usercontrol and auton tasks, kill previous task 
+	Int jump1 = 1;
+	Int jump2 = 1;
 
-jump1 = in1;
-jump2 = in2;
+	jump1 = in1;
+	jump2 = in2;
 }
 
 task autonomous() //Actual autonomous code
 {
-If(jump1==1){
+	If(jump1==1){
 
-} else if (jump2==1) {
+	} else if (jump2==1) {
 
-} else {
-
-} 
+	} else {
+		
+	} 
 }
 
 void drive_forward() //test function. Doesn't currently work
