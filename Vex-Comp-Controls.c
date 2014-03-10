@@ -57,6 +57,25 @@ task usercontrol() //Interaction with controller starts once this task is initia
 	  motor[leftMotor]  = (vexRT[Ch3]); //left motors to channel 3(left stick up)
     motor[rightMotor] = (vexRT[Ch2])/2; //right motors to channel 2(right stick up)
 
+    if(vexRT[Btn8U])==1){
+    int pot,goingTo;
+    bool go = true;
+    while (go==true){
+    	pot =
+    if (pot>goingTo){
+
+    }
+    	else if(pot<goingTo){
+    	}else{
+     go = false;
+    }
+    }
+
+    }
+    if(vexRT[Btn8D])==1){}
+    if(vexRT[Btn8L])==1){}
+    if(vexRT[Btn8R])==1){}
+
     if(vexRT[Btn6U] == 1)         // If button 6U (upper right shoulder button) is pressed:
     {
       motor[pickupMotor] = 127;
@@ -65,6 +84,8 @@ task usercontrol() //Interaction with controller starts once this task is initia
     	motor[pickupMotor] = -127;
     }
     else{motor[pickupMotor]=0;}
+
+
 
     if(vexRT[Btn5U] == 1)         // If button 6U (upper right shoulder button) is pressed:
     {
@@ -75,6 +96,8 @@ task usercontrol() //Interaction with controller starts once this task is initia
     }
     else{motor[liftMotor1]=0;}
 
+
+
     if(vexRT[Btn5U] == 1)         // If button 6U (upper right shoulder button) is pressed:
     {
       motor[liftMotor2] = 127;
@@ -83,6 +106,7 @@ task usercontrol() //Interaction with controller starts once this task is initia
     	motor[liftMotor2] = -127;
     }
     else{motor[liftMotor2]=0;}
+
 
 	}
 }
