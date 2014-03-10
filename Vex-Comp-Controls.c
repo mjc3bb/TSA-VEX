@@ -25,8 +25,8 @@
 void pre_auton() //Setup for when autonomous is started
 {
 	bStopTasksBetweenModes = true; //When you swap between usercontrol and auton tasks, kill previous task
-	Int jump1 = 1;
-	Int jump2 = 1;
+	int jump1 = 1;
+	int jump2 = 1;
 
 	jump1 = in1;
 	jump2 = in2;
@@ -34,13 +34,7 @@ void pre_auton() //Setup for when autonomous is started
 
 task autonomous() //Actual autonomous code
 {
-	If(jump1==1){
-
-	} else if (jump2==1) {
-
-	} else {
-
-	}
+	motor[leftMotor]= 64;
 }
 
 void drive_forward() //test function. Doesn't currently work
@@ -56,25 +50,28 @@ task usercontrol() //Interaction with controller starts once this task is initia
 	{
 	  motor[leftMotor]  = (vexRT[Ch3]); //left motors to channel 3(left stick up)
     motor[rightMotor] = (vexRT[Ch2])/2; //right motors to channel 2(right stick up)
+		bool go = true;
+		int goingTo = 2000;
+   	if (vexRT[Btn8D]==1)
+   		while (go==true)
+     {
 
-    if(vexRT[Btn8U])==1){
-    int pot,goingTo;
-    bool go = true;
-    while (go==true){
-    	pot =
-    if (pot>goingTo){
+       if (potLeft> goingTo)
 
-    }
-    	else if(pot<goingTo){
-    	}else{
-     go = false;
-    }
-    }
 
-    }
-    if(vexRT[Btn8D])==1){}
-    if(vexRT[Btn8L])==1){}
-    if(vexRT[Btn8R])==1){}
+       else if (potleft<goingTo)
+
+       else go = false;
+      }
+
+
+ // 	else if ()
+ // 	 go=false;
+ //		else
+ //			go=false;
+
+
+
 
     if(vexRT[Btn6U] == 1)         // If button 6U (upper right shoulder button) is pressed:
     {
